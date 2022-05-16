@@ -22,8 +22,7 @@ class Shipping
          
         // iterate all cart products to check if samedaydelivery_attribute is true
         
-        print_r(($allItems);
-        exit;
+      
         foreach ($allItems as $item) {    
             $_product = $this->product->create()->load($item->getProduct()->getId());
             // if product has samedaydelivery_attribute true
